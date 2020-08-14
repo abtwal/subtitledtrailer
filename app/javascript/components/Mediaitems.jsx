@@ -4,12 +4,12 @@ import PropTypes from "prop-types";
 class Mediaitems extends React.Component {
   render () {
     return (
-      <React.Fragment>
+      <div className="mediaitems">
         Mediaitems:
         {this.props.mediaitems.map(mediaitem => (
-          <li key={mediaitem.id}>{`${mediaitem.title}`}</li>
+          <li className="item" key={mediaitem.id}>{`${mediaitem.title}`}</li>
         ))}
-      </React.Fragment>
+      </div>
     );
   }
 }
